@@ -15,13 +15,13 @@ import static ru.praktikum.yandex.config.Configs.*;
 
 public class UpdateUserTest {
     private static ClientSteps clientSteps;
-    static Faker faker = new Faker();
-    static String existedClientEmail = faker.internet().emailAddress();
-    static String originalEmail = faker.internet().emailAddress();
-    static String newEmail = faker.internet().emailAddress();
-    static String password = faker.internet().password(1, 10, true, true);
-    static String originalName = faker.name().name();
-    static String newName = faker.name().name();
+    private static final Faker faker = new Faker();
+    private static final String existedClientEmail = faker.internet().emailAddress();
+    private static final String originalEmail = faker.internet().emailAddress();
+    private static final String newEmail = faker.internet().emailAddress();
+    private static final String password = faker.internet().password(1, 10, true, true);
+    private static final String originalName = faker.name().name();
+    private static final String newName = faker.name().name();
 
     @BeforeClass
     public static void setUp() {

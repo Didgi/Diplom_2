@@ -15,10 +15,10 @@ import static ru.praktikum.yandex.config.Configs.*;
 
 public class LoginUserTest {
     private ClientSteps clientSteps;
-    Faker faker = new Faker();
-    String email = faker.internet().emailAddress();
-    String password = faker.internet().password(5, 10, true, true);
-    String name = faker.name().name();
+    private final Faker faker = new Faker();
+    private final String email = faker.internet().emailAddress();
+    private final String password = faker.internet().password(5, 10, true, true);
+    private final String name = faker.name().name();
 
     @Before
     public void setUp() {
